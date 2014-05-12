@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mkm game Demo</title>
+		<style>
+			body {
+				background: #000;
+			}
+			#content {
+				width: 360px;
+				height: 600px;
+				margin: 0 auto;
+				position: relative;
+			}
+			canvas {
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: transparent;
+			}
+			#background {
+				background: #222;
+				z-index: -2;
+			}
+			#main {
+				z-index: -1;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+	
+			<!-- The canvas for the panning background -->
+			<canvas id="background" width="360" height="600">
+				Your browser does not support canvas. Please try again with a different browser.
+			</canvas>
+			<!-- The canvas for all enemy ships and bullets -->
+			<canvas id="main" width="360" height="600">
+			</canvas>
+			<!--http://blog.sklambert.com/galaxian-html5-game/-->
+			<!--http://www.kevs3d.co.uk/dev/eglogo/-->
+			<!--http://ezelia.com/2013/05/tutorial-gestion-des-scenes-dun-jeu-des-transitions-et-de-la-mise-a-lechelle-avec-pixi-js/-->
+			<!--https://hacks.mozilla.org/2013/05/optimizing-your-javascript-game-for-firefox-os/-->
+		</div>
+		
+		<script src="js/game.js"></script>
+		<script src="js/DisplayGrid.js"></script>
+	</body>
+</html>
